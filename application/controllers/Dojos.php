@@ -19,6 +19,16 @@ class Dojos extends CI_Controller {
 		));
 	}
 
+	public function create()
+	{
+		$result = $this->dojo->create_dojo($this->input->post());
+		if ($result)
+		{
+			redirect('/');
+
+		}
+	}
+
 	public function add_student($id)
 	{
 		$result = $this->student->add_student_to_dojo($id, $this->input->post());
