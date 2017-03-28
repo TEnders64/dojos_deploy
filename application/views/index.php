@@ -11,7 +11,7 @@
 <?php } ?>
         <form action="/dojos/create" method="post">
             <p>Name: <input type="text" name="name"></p>
-            <p>Location: <input type="text" name="location"></p>
+            <p>City: <input type="text" name="city"></p>
             <p>State: <input type="text" name="state" placeholder="WA"></p>
             <input type="submit" value="Add Dojo">
         </form>

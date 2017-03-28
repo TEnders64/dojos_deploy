@@ -15,7 +15,7 @@ class Dojo extends CI_Model {
 
     public function create_dojo($post)
     {
-        $this->db->query('INSERT INTO dojos (name, location, state, created_at) VALUES (?, ?, ?, NOW())', array($post['name'], $post['location'], $post['state']));
+        $this->db->query('INSERT INTO dojos (name, city, state, created_at) VALUES (?, ?, ?, NOW())', array($post['name'], $post['city'], $post['state']));
         return true;
     }
 
